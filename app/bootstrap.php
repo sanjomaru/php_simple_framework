@@ -1,1 +1,3 @@
-<h1>Hello Its me Bootstrap File</h1>
+<?php
+
+require_once('libraries/core.php');
