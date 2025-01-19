@@ -16,6 +16,9 @@ class Core{
        if(file_exists('../app/controller/'.ucwords($url[0]).'.php')){
             $this->currentController = ucwords($url[0]);
             unset($url[0]);
+       } else if (file_exists('../app/controller/'.ucwords($url[1]).'.php')){
+            $this->currentController = ucwords($url(1));
+            unset($url[1]);
        }
        require_once('../app/controller/'.$this->currentController.'.php');
        $this->currentController = new $this->currentController;
