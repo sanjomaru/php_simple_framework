@@ -5,8 +5,8 @@ class Pages{
         echo "Pages Loaded";
     }
 
-    public function about(){
-        return "About Page";
+    public function about($id){
+        echo "About Page".$id;
     }
 }
 
