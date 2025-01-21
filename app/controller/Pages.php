@@ -5,9 +5,14 @@ class Pages{
         echo "Pages Loaded";
     }
 
+    public function index(){
+        
+    }
+
     public function about($id){
         echo "About Page".$id;
     }
+ 
 }
 
 ?>

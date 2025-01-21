@@ -13,7 +13,7 @@ class Core{
     public function __construct(){
        $url = $this->getUrl();
         
-       if(file_exists('../app/controller/'.ucwords($url[0]).'.php')){
+       if(isset($url[0]) && file_exists('../app/controller/'.ucwords($url[0]).'.php')){
             $this->currentController = ucwords($url[0]);
             unset($url[0]);
        } 
@@ -27,8 +27,10 @@ class Core{
 
             unset($url[1]);
         }
-       }
 
+       
+       }
+     
        $this->params = $url ? array_values($url) : [];
 
        //Call a callback with array of params
@@ -42,9 +44,7 @@ class Core{
             $url = filter_var($url, FILTER_SANITIZE_URL);
             $url = explode('/', $url);
             return $url;
-        } else {
-            return $url = $this->currentController;
-        }
+        } 
     }
 
 }
