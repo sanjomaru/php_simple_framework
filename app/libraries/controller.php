@@ -18,6 +18,8 @@ class Controller{
 
     //load views
     public function view($view){
+        require_once('../app/models/'.$views.'.php');
 
+        return new $view();
     }
 }
