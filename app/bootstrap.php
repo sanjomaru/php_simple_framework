@@ -1,5 +1,5 @@
 <?php
 
 require_once('libraries/core.php');
-
-new Core;
+require_once('libraries/controller.php');
+require_once('libraries/database.php');

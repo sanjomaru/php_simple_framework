@@ -7,7 +7,7 @@
 
 class Controller{
     //load model
-    public function  model($model){
+    public function model($model){
         //require model file
 
         require_once('../app/models/'.$model.'.php');
@@ -17,9 +17,13 @@ class Controller{
     }
 
     //load views
-    public function view($view){
-        require_once('../app/models/'.$views.'.php');
+    public function view($view, $data = []){
 
-        return new $view();
+        if(file_exists('../app/views'.$view.'.php')){
+            require_once('../app/models/'.$view.'.php');
+        }else{
+            die('View Does Not Exist');
+        }
+        
     }
 }
