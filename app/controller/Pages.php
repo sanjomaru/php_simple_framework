@@ -2,15 +2,20 @@
 
 class Pages extends Controller{
     public function __construct(){
-        echo "Pages Loaded";
+        
     }
 
     public function index(){
-        $this->view('hellow')
+       $this->view('pages/index');
     }
 
-    public function about($id){
-        echo "About Page".$id;
+    public function about(){
+        $this->view('pages/about');
+    }
+
+    public function contact(){
+        $contacts = ['sanjo', 'maru'];
+        $this->view('pages/contact-us', $contacts);
     }
  
 }
