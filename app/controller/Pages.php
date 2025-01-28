@@ -17,6 +17,10 @@ class Pages extends Controller{
         $contacts = ['sanjo', 'maru'];
         $this->view('pages/contact-us', $contacts);
     }
+
+    public function pdopractice(){
+        $this->view('pages/pdopractice');
+    }
  
 }
 
