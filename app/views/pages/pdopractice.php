@@ -18,7 +18,21 @@ $pdo = new PDO($dsn, $user, $password);
 //Select
 $sql = $pdo->prepare('SELECT * FROM users');
 $sql->execute();
+//FETCH OPTIONS
+// PDO::FETCH_OBJ
+// PDO::FETCH_ASSOC
 $rows = $sql->fetchAll();
+
+//Insert - Using named paramenters
+$sname = 'JOSAN';
+$email = 'josan@gmail.com';
+$saddress = 'phs';
+$birthday = '1990-05-15';
+$sex = 'Male';
+$age = '12';
+$sql = $pdo->prepare("INSERT INTO users (name, email, address, birthday, sex, age) VALUES (:sname, :email, :saddress, :birthday, :sex, :age)");
+$sql->execute(['sname' => $sname, 'email' => $email, 'saddress' => $saddress, 'birthday' => $birthday, 'sex' => $sex, 'age' => $age]);
+echo 'POST INSERTED';
 
 ?>
 
