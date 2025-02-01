@@ -7,10 +7,13 @@ require_once('config/config.php');
 // require_once('libraries/controller.php');
 // require_once('libraries/database.php');
 
+
+
 //Autoload Core Libraries
 spl_autoload_register(function($className){
-    echo $className;
+   
     require_once('libraries/'.$className.'.php');
+    echo $className;
 });
 
 ?>
