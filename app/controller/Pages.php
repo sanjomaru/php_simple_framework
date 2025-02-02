@@ -8,7 +8,13 @@ class Pages extends Controller{
     }
 
     public function index(){
-       $this->view('pages/index');
+        $results = $this->postModel->getPost();
+
+        $data = [
+            'posts' => $results
+        ];
+
+        $this->view('pages/index', $data);
     }
 
     public function about(){
