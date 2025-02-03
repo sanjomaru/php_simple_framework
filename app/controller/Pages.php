@@ -4,26 +4,28 @@ class Pages extends Controller{
 
 
     public function __construct(){
-        $this->postModel = $this->model('Post');
+    
     }
 
     public function index(){
-        $results = $this->postModel->getPost();
-
         $data = [
-            'posts' => $results
+            'title' => 'Home'
         ];
-
         $this->view('pages/index', $data);
     }
 
     public function about(){
-        $this->view('pages/about');
+        $data = [
+            'title' => 'About'
+        ];
+        $this->view('pages/about', $data);
     }
 
     public function contact(){
-        $contacts = ['sanjo', 'maru'];
-        $this->view('pages/contact-us', $contacts);
+        $data = [
+            'title' => 'Contact Us'
+        ];
+        $this->view('pages/contact-us', $data);
     }
 
     public function pdopractice(){
