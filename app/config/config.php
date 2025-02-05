@@ -14,3 +14,6 @@ define('URLROOT', 'http://localhost/php_simple_framework');
 
 //SITE Name
 define('SITENAME', 'SharePost');
+
+//App Version
+define('APPVERSION', '1.0.0 - '.date('Y'));

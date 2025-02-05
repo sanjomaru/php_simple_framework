@@ -2,9 +2,16 @@
 
 <?php
 $title = $data['title'];
+$description = $data['description'];
 ?>
 
-<h1><?php echo $title; ?></h1>
+<div class="p-5 mb-4 bg-body-tertiary rounded-3">
+    <div class="container text-center">
+        <h1 class='display-5 fw-bold'><?php echo $title; ?></h1>
+        <p><?php echo $description; ?></p>
+    </div>
+</div>
+
 
 
 <?php require_once APPROOT.'/views/inc/footer.php'; ?>

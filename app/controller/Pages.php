@@ -9,23 +9,42 @@ class Pages extends Controller{
 
     public function index(){
         $data = [
-            'title' => 'Home'
+            'title' => 'Home',
+            'description' => 'Sample Description for Homepage'
         ];
         $this->view('pages/index', $data);
     }
 
     public function about(){
         $data = [
-            'title' => 'About'
+            'title' => 'About',
+            'description' => 'Sample Description for About'
         ];
         $this->view('pages/about', $data);
     }
 
     public function contact(){
         $data = [
-            'title' => 'Contact Us'
+            'title' => 'Contact Us',
+            'description' => 'Sample Description for Contact Us'
         ];
-        $this->view('pages/contact-us', $data);
+        $this->view('pages/contact', $data);
+    }
+
+    public function register(){
+        $data = [
+            'title' => 'Register',
+            'description' => 'Sample Description for Register'
+        ];
+        $this->view('pages/register', $data);
+    }
+
+    public function login(){
+        $data = [
+            'title' => 'Login',
+            'description' => 'Sample Description for Login'
+        ];
+        $this->view('pages/login', $data);
     }
 
     public function pdopractice(){
