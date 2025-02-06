@@ -32,11 +32,7 @@ class Pages extends Controller{
     }
 
     public function register(){
-        $data = [
-            'title' => 'Register',
-            'description' => 'Sample Description for Register'
-        ];
-        $this->view('pages/register', $data);
+        $this->view('users/register', $data);
     }
 
     public function login(){

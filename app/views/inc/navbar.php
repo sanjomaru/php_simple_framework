@@ -16,7 +16,7 @@
                 <a class="nav-link" href="<?php echo URLROOT; ?>/pages/contact/">Contact</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link" href="<?php echo URLROOT; ?>/pages/register/">Register</a>
+                <a class="nav-link" href="<?php echo URLROOT; ?>/users/register/">Register</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link" href="<?php echo URLROOT; ?>/pages/login/">Login</a>
