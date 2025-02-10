@@ -9,6 +9,7 @@ $description = $data['description'];
     <div class="container text-center">
         <h1 class='display-5 fw-bold'><?php echo $title; ?></h1>
         <p><?php echo $description; ?></p>
+  
     </div>
 </div>
 

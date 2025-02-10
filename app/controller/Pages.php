@@ -31,9 +31,9 @@ class Pages extends Controller{
         $this->view('pages/contact', $data);
     }
 
-    public function register(){
-        $this->view('users/register', $data);
-    }
+    // public function register(){
+    //     $this->view('users/register', $data);
+    // }
 
     public function login(){
         $data = [
