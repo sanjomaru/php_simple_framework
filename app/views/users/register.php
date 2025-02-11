@@ -13,6 +13,16 @@ $description = $data['description'];
     </div>
 </div>
 
+<div class="container">
+    <div class="row">
+        <form action="<?php echo URLROOT; ?>/users/register" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="" class="form-control form-control-lg">
+            </div>
+        </form>
+    </div>
+</div>
 
 
 <?php require_once APPROOT.'/views/inc/footer.php'; ?>
