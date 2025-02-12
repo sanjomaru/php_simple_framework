@@ -18,7 +18,7 @@ $description = $data['description'];
         <form action="<?php echo URLROOT; ?>/users/register" method="post">
             <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="" class="form-control form-control-lg">
+                <input type="text" name="name" id="" class="form-control form-control-lg <?php echo (!empty($data['name_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['name']; ?>">
             </div>
         </form>
     </div>
