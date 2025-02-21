@@ -19,7 +19,7 @@
                 <a class="nav-link" href="<?php echo URLROOT; ?>/users/register/">Register</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link" href="<?php echo URLROOT; ?>/pages/login/">Login</a>
+                <a class="nav-link" href="<?php echo URLROOT; ?>/users/login/">Login</a>
             </li>
           </ul>
         </div>

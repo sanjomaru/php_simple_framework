@@ -4,7 +4,10 @@
 $title = $data['title'];
 $description = $data['description'];
 ?>
-
+<div class="container">
+<div class="row">
+    <div class="col-md-6 mx-auto">
+        <div class="card card-body bg-light mt-5">
 <div class="p-5 mb-4 bg-body-tertiary rounded-3">
     <div class="container text-center">
         <h1 class='display-5 fw-bold'><?php echo $title; ?></h1>
@@ -48,6 +51,9 @@ $description = $data['description'];
         </form>
     </div>
 </div>
-
+</div>
+</div>
+</div>
+</div>
 
 <?php require_once APPROOT.'/views/inc/footer.php'; ?>
