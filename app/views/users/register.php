@@ -31,12 +31,12 @@ $description = $data['description'];
             </div>
             <div class="form-group">
                 <label for="password">Password: </label>
-                <input type="text" name="password" id="" class="form-control form-control-lg <?php echo (!empty($data['password_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['password']; ?>">
+                <input type="password" name="password" id="" class="form-control form-control-lg <?php echo (!empty($data['password_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['password']; ?>">
                 <span class="invalid-feedback"><?php echo $data['password_err']; ?></span>
             </div>
             <div class="form-group">
                 <label for="confirm_password">Confirm Password: </label>
-                <input type="text" name="confirm_password" id="" class="form-control form-control-lg <?php echo (!empty($data['confirm_password_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['confirm_password']; ?>">
+                <input type="password" name="confirm_password" id="" class="form-control form-control-lg <?php echo (!empty($data['confirm_password_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['confirm_password']; ?>">
                 <span class="invalid-feedback"><?php echo $data['confirm_password_err']; ?></span>
             </div>
 
@@ -55,5 +55,12 @@ $description = $data['description'];
 </div>
 </div>
 </div>
+<?php
+
+if(isset($_POST['submit'])){
+    // $register = user->register();
+}
+
+?>
 
 <?php require_once APPROOT.'/views/inc/footer.php'; ?>

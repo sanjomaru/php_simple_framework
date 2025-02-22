@@ -15,7 +15,7 @@ $title = $data['title'];
 
 <div class="container">
     <div class="row">
-        <form action="<?php echo URLROOT; ?>/users/register" method="post">
+        <form action="<?php echo URLROOT; ?>/users/login" method="post">
             <div class="form-group">
                 <label for="email">Email: </label>
                 <input type="text" name="email" id="" class="form-control form-control-lg <?php echo (!empty($data['email_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['email']; ?>">
@@ -23,7 +23,7 @@ $title = $data['title'];
             </div>
             <div class="form-group">
                 <label for="password">Password: </label>
-                <input type="text" name="password" id="" class="form-control form-control-lg <?php echo (!empty($data['password_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['password']; ?>">
+                <input type="password" name="password" id="" class="form-control form-control-lg <?php echo (!empty($data['password_err'])) ? 'is-invalid' : ''; ?>" value="<?php echo $data['password']; ?>">
                 <span class="invalid-feedback"><?php echo $data['password_err']; ?></span>
             </div>
 
